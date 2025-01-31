@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isSelected, setIsSelected] = useState("About Me");
 
   return (
-    <div className="py-8 container max-w-page">
+    <div className="py-5 container max-w-page sticky top-0 z-50 bg-black">
       <div className="font-bricolage font-bold border-2 rounded-full py-4 px-14  flex justify-between items-center ">
         <p className="text-3xl cursor-pointer text-white">Made Satya</p>
         <ul className="flex gap-5 cursor-pointer">
