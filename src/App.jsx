@@ -1,14 +1,16 @@
-import Experience from "./components/experience/Experience.jsx";
-import Hero from "./components/hero/Hero.jsx";
-import Navbar from "./components/nav/Navbar.jsx";
-import Project from "./components/project/Project.jsx";
+import Experience from "./section/experience/Experience.jsx";
+import Hero from "./section/hero/Hero.jsx";
+import Hobby from "./section/hobby/Hobby.jsx";
+import Navbar from "./section/nav/Navbar.jsx";
+import Project from "./section/project/Project.jsx";
 
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-black ">
+      <div className="min-h-screen bg-black scrollbar">
         <Navbar />
         <Hero />
+        <Hobby />
         <Experience />
         <Project />
       </div>

@@ -16,6 +16,7 @@ export default {
       colors: {
         "medium-gray": "#D9D9D9",
         "light-green": "#a8d363",
+        "dark-green" : "#0f2809",
       },
     },
   },
