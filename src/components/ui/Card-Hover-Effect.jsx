@@ -35,6 +35,9 @@ export const CardHover = ({
             )}
           </AnimatePresence>
           <Card>
+            <div className="h-64">
+              <img src={item.image} alt={item.image} className="object-cover h-full w-full rounded-xl"/>
+            </div>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>

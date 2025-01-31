@@ -87,6 +87,9 @@ export default function Experience() {
 
   return (
     <div className="w-full mt-52">
+      <h2 className="text-lg md:text-7xl mb-4 text-white font-bricolage text-center font-bold">
+        Experience
+      </h2>
       <Timeline data={data} />
     </div>
   );
