@@ -1,4 +1,5 @@
 import Experience from "./section/experience/Experience.jsx";
+import Footer from "./section/footer/Footer.jsx";
 import Hero from "./section/hero/Hero.jsx";
 import Hobby from "./section/hobby/Hobby.jsx";
 import Navbar from "./section/nav/Navbar.jsx";
@@ -13,6 +14,7 @@ function App() {
         <Hobby />
         <Experience />
         <Project />
+        <Footer />
       </div>
     </>
   );
