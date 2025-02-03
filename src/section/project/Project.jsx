@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Nonton Cuy",
     description:
-      "A website for rating movies that have been watched using OMDb API.",
+      "A website for rating movies that have been watched, using data from the OMDb API.",
     link: "",
     image: "/image/nontoncuy.png",
   },
