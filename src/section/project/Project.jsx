@@ -6,7 +6,7 @@ const projects = [
     title: "Hepatic Eye",
     description:
       "A mobile application for detecting jaundice caused by hepatitis, with trained models and yolo v8",
-    link: "",
+    link: "https://github.com/MadeSatya5/HepaticEye",
     image: "/image/hepatic.png",
   },
   {
@@ -17,11 +17,11 @@ const projects = [
     image: "/image/healthcare.png",
   },
   {
-    title: "Nonton Cuy",
+    title: "Kode Kreasi",
     description:
-      "A website for rating movies that have been watched, using data from the OMDb API.",
-    link: "",
-    image: "/image/nontoncuy.png",
+      "A web-based educational platform that provides lecture materials related to computer science",
+    link: "https://kode-kreasi.vercel.app/",
+    image: "/image/kodekreasi.png",
   },
 ];
 
