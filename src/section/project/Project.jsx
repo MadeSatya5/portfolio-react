@@ -6,21 +6,21 @@ const projects = [
     title: "Hepatic Eye",
     description:
       "A mobile application for detecting jaundice caused by hepatitis, with trained models and yolo v8",
-    link: "https://github.com/MadeSatya5/HepaticEye",
+    link: "",
     image: "/image/hepatic.png",
   },
   {
     title: "HealthCare",
     description:
       "A website for organizing and managing health consultations between patients and doctors. Features login as patient and doctor, and CRUD of appointments.",
-    link: "https://healthcare-id.wuaze.com",
+    link: "",
     image: "/image/healthcare.png",
   },
   {
     title: "Nonton Cuy",
     description:
       "A website for rating movies that have been watched, using data from the OMDb API.",
-    link: "https://nonton-cuy.vercel.app/",
+    link: "",
     image: "/image/nontoncuy.png",
   },
 ];
