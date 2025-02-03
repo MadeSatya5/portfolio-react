@@ -17,9 +17,9 @@ const words = [
   },
 ];
 
-export default function Hero() {
+export default function Hero({heroRef}) {
   return (
-    <div className="container max-w-page mt-24 font-bricolage text-white">
+    <div className="container max-w-page mt-24 font-bricolage text-white" ref={heroRef}>
       <div className="flex justify-between items-center">
         <div className="basis-1/2 ">
           <TypewriterEffectSmooth words={words} />

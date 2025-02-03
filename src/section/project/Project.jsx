@@ -25,9 +25,9 @@ const projects = [
   },
 ];
 
-export default function Project() {
+export default function Project({ projectRef }) {
   return (
-    <div className="container max-w-page mt-52">
+    <div className="container max-w-page mt-52" ref={projectRef}>
       <Fade bottom delay={200}>
         <h2 className="text-4xl md:text-7xl mb-4 text-white font-bricolage text-center font-bold">
           Project
