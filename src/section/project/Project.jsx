@@ -1,3 +1,4 @@
+import { Fade } from "react-reveal";
 import { CardHover } from "../../components/ui/Card-Hover-Effect";
 
 const projects = [
@@ -48,9 +49,11 @@ const projects = [
 export default function Project() {
   return (
     <div className="container max-w-page mt-52">
-      <h2 className="text-lg md:text-7xl mb-4 text-white font-bricolage text-center font-bold">
-        Project
-      </h2>
+      <Fade bottom delay={200}>
+        <h2 className="text-lg md:text-7xl mb-4 text-white font-bricolage text-center font-bold">
+          Project
+        </h2>
+      </Fade>
       <CardHover items={projects} />
     </div>
   );

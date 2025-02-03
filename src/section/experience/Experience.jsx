@@ -1,3 +1,4 @@
+import { Fade } from "react-reveal";
 import { Timeline } from "../../components/ui/timeline";
 
 const data = [
@@ -88,12 +89,13 @@ const data = [
 ];
 
 export default function Experience() {
-
   return (
     <div className="w-full mt-52">
-      <h2 className="text-lg md:text-7xl mb-4 text-white font-bricolage text-center font-bold">
-        Experience
-      </h2>
+      <Fade bottom duration={500}>
+        <h2 className="text-4xl md:text-7xl mb-4 text-white font-bricolage text-center font-bold">
+          Experience
+        </h2>
+      </Fade>
       <Timeline data={data} />
     </div>
   );

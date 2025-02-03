@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function RotatingElement() {
   return (
-    <div>
+    <div className="pt-5">
         <motion.div
           initial={{
             rotate: 0,
@@ -16,7 +16,7 @@ export default function RotatingElement() {
             repeat: Infinity,
           }}
         >
-        <img src="/image/earth.png" alt="Earth" className="w-[450px]" />
+        <img src="/image/earth.png" alt="Earth" className="md:w-[450px] sm:w-[290px] w-[120px]" />
       </motion.div>
     </div>
   );
