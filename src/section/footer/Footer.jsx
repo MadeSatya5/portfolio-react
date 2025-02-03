@@ -4,12 +4,11 @@ import SosmedIcon from "../../components/ui/SosmedIcon";
 import { Zoom } from "react-reveal";
 
 const skills = ["React Js", "Next Js", "Tailwind CSS", "Typescript"];
-const navigations = ["About Me", "Experience", "Project"];
 
 export default function Footer() {
   return (
     <div className=" border-white border-t-2 mt-40 font-bricolage px-10">
-      <div className="container max-w-page text-white py-20 flex flex-wrap gap-12 md:gap-28 bg-black">
+      <div className="container max-w-page text-white py-20 flex flex-wrap gap-12 md:gap-20 bg-black">
         <Zoom duration={400}>
           <div>
             <p className="text-2xl md:text-3xl font-bold">Made Satya</p>
@@ -17,6 +16,7 @@ export default function Footer() {
               Through personal and collaborative projects, <br /> I practice my
               coding skills.
             </p>
+
             <SosmedIcon />
           </div>
         </Zoom>
@@ -57,13 +57,10 @@ export default function Footer() {
           </div>
         </Zoom>
         <Zoom duration={1200}>
-          <div>
-            <ul className="text-2xl md:text-3xl font-bold">
-              <p className="mb-4">Navigation</p>
-              {navigations.map((navigation) => (
-                <FooterItem item={navigation} key={navigation} />
-              ))}
-            </ul>
+          <div className="flex items-start">
+            <p className="text-sm font-bold mt-3 text-white font-bricolage">
+              Copyright © 2025 | @madesatya505
+            </p>
           </div>
         </Zoom>
       </div>

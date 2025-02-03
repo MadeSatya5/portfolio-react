@@ -13,14 +13,14 @@ const projects = [
     title: "HealthCare",
     description:
       "A website for organizing and managing health consultations between patients and doctors. Features login as patient and doctor, and CRUD of appointments.",
-    link: "",
+    link: "https://healthcare-id.wuaze.com",
     image: "/image/healthcare.png",
   },
   {
     title: "Nonton Cuy",
     description:
       "A website for rating movies that have been watched, using data from the OMDb API.",
-    link: "",
+    link: "https://nonton-cuy.vercel.app/",
     image: "/image/nontoncuy.png",
   },
 ];
