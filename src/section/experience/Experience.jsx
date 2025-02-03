@@ -76,7 +76,7 @@ const data = [
 
 export default function Experience({experienceRef}) {
   return (
-    <div className="w-full mt-52" ref={experienceRef}>
+    <div className="w-full pt-52" ref={experienceRef}>
       <Fade bottom duration={500}>
         <h2 className="text-4xl md:text-7xl mb-4 text-white font-bricolage text-center font-bold">
           Experience
