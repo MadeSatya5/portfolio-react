@@ -8,7 +8,7 @@ import Project from "./section/project/Project.jsx";
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-black scrollbar overflow-x-hidden">
+      <div className="min-h-screen bg-black scrollbar overflow-x-clip">
         <Navbar />
         <Hero />
         <Hobby />

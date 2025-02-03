@@ -1,6 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { Fade } from "react-reveal";
+import { Zoom } from "react-reveal";
 
 export const Timeline = ({ data }) => {
   const ref = useRef(null);
@@ -23,7 +23,7 @@ export const Timeline = ({ data }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <Fade bottom>
+    <Zoom>
       <div className="w-full bg-black font-sans md:px-10" ref={containerRef}>
         <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
           {data.map((item, index) => (
@@ -64,6 +64,6 @@ export const Timeline = ({ data }) => {
           </div>
         </div>
       </div>
-    </Fade>
+    </Zoom>
   );
 };
