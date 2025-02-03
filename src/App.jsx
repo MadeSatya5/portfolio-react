@@ -28,7 +28,7 @@ function App() {
 
     const observerOptions = {
       root: null,
-      threshold: 0.6,
+      threshold: 0.3,
     };
 
     const observerCallback = (entries) => {
