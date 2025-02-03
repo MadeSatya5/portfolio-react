@@ -13,14 +13,14 @@ const projects = [
     title: "HealthCare",
     description:
       "A website for organizing and managing health consultations between patients and doctors. Features login as patient and doctor, and CRUD of appointments.",
-    link: "https://netflix.com",
+    link: "",
     image: "/image/healthcare.png",
   },
   {
     title: "Nonton Cuy",
     description:
       "A website for rating movies that have been watched using OMDb API.",
-    link: "https://meta.com",
+    link: "",
     image: "/image/nontoncuy.png",
   },
 ];
