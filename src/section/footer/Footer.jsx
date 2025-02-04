@@ -1,4 +1,4 @@
-import { BsEnvelopeFill, BsFillTelephoneFill } from "react-icons/bs";
+import { BsEnvelopeFill } from "react-icons/bs";
 import FooterItem from "./FooterItem";
 import SosmedIcon from "../../components/ui/SosmedIcon";
 import { Zoom } from "react-reveal";
@@ -34,14 +34,14 @@ export default function Footer() {
           <div>
             <p className="text-2xl md:text-3xl font-bold mb-4">Contact Me</p>
             <div className="flex flex-col gap-2">
-              <a
+              {/* <a
                 href="https://wa.me/6281381258567"
                 target="_blank"
                 className="flex flex-row items-center cursor-pointer hover:underline hover:text-light-green"
               >
                 <BsFillTelephoneFill />
                 <p className="ml-3 text-sm md:text-lg">+6281381258567</p>
-              </a>
+              </a> */}
 
               <a
                 href="mailto:madesatya505@gmail.com"

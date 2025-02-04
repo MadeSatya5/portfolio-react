@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Hepatic Eye",
     description:
-      "A mobile application for detecting jaundice caused by hepatitis, with trained models and yolo v8",
+      "A mobile application for detecting jaundice caused by hepatitis using eye, with trained models and yolo v8",
     link: "https://github.com/MadeSatya5/HepaticEye",
     image: "/image/hepatic.png",
   },
