@@ -59,7 +59,8 @@ export default function Footer() {
         <Zoom duration={1200}>
           <div className="flex items-start">
             <p className="text-sm font-bold mt-3 text-white font-bricolage">
-              Copyright © 2025 | @madesatya505
+              Copyright © 2025 |{" "}
+              <a href="https://instagram.com/madesatya.5">@madesatya.5</a>
             </p>
           </div>
         </Zoom>
