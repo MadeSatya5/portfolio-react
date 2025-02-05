@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { cn } from "../lib/utils";
-import { Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 export const Card = React.memo(({ card, index, hovered, setHovered }) => (
-  <Zoom delay={index * 150}>
+  <Fade left delay={index * 450}>
     <div
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "rounded-lg relative bg-black overflow-hidden h-96 md:h-96 w-full transition-all duration-300 ease-out",
+        "rounded-lg relative bg-black overflow-hidden h-96 md:h-96 md:w-full w-[300px] transition-all duration-300 ease-out",
         hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
       )}
     >
@@ -28,7 +28,7 @@ export const Card = React.memo(({ card, index, hovered, setHovered }) => (
         </div>
       </div>
     </div>
-  </Zoom>
+  </Fade>
 ));
 
 Card.displayName = "Card";
@@ -37,7 +37,7 @@ export function FocusCards({ cards }) {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full cursor-pointer">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto md:px-8 w-full cursor-pointer justify-items-center">
       {cards.map((card, index) => (
         <Card
           key={card.title}

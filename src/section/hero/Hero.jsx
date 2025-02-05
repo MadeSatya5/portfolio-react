@@ -21,7 +21,7 @@ export default function Hero({heroRef}) {
   return (
     <div className="container max-w-page pt-24 font-bricolage text-white" ref={heroRef}>
       <div className="flex justify-between items-center">
-        <div className="basis-1/2 ">
+        <div className="basis-2/3 ">
           <TypewriterEffectSmooth words={words} />
           <Fade left delay={150}>
             <p className="text-lg md:text-4xl">
