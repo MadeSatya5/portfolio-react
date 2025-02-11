@@ -1,14 +1,13 @@
 import { cn } from "../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { Fade } from "react-reveal";
+import { Bounce } from "react-reveal";
 
 export const CardHover = ({ items, className }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <>
-    <Fade delay={600}>
       <div
         className={cn(
           "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
@@ -16,6 +15,7 @@ export const CardHover = ({ items, className }) => {
         )}
       >
         {items.map((item, idx) => (
+          <Bounce right delay={400 * idx} key={idx}>
           <a
             href={item?.link}
             target="blank"
@@ -53,9 +53,9 @@ export const CardHover = ({ items, className }) => {
               <CardDescription>{item.description}</CardDescription>
             </Card>
           </a>
+      </Bounce>
         ))}
       </div>
-      </Fade>
     </>
   );
 };
