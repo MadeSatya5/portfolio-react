@@ -8,54 +8,54 @@ export const CardHover = ({ items, className }) => {
 
   return (
     <>
-      <div
-        className={cn(
-          "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
-          className
-        )}
-      >
-        {items.map((item, idx) => (
-          <Bounce right delay={400 * idx} key={idx}>
-          <a
-            href={item?.link}
-            target="blank"
-            key={item?.link}
-            className="relative group  block p-2 h-full w-full"
-            onMouseEnter={() => setHoveredIndex(idx)}
-            onMouseLeave={() => setHoveredIndex(null)}
-          >
-            <AnimatePresence>
-              {hoveredIndex === idx && (
-                <motion.span
-                  className="absolute inset-0 h-full w-full bg-dark-green  block  rounded-3xl"
-                  layoutId="hoverBackground"
-                  initial={{ opacity: 0 }}
-                  animate={{
-                    opacity: 1,
-                    transition: { duration: 0.15 },
-                  }}
-                  exit={{
-                    opacity: 0,
-                    transition: { duration: 0.15, delay: 0.2 },
-                  }}
-                />
-              )}
-            </AnimatePresence>
-            <Card>
-              <div className="h-64">
-                <img
-                  src={item.image}
-                  alt={item.image}
-                  className="object-cover h-full w-full rounded-xl"
-                />
-              </div>
-              <CardTitle>{item.title}</CardTitle>
-              <CardDescription>{item.description}</CardDescription>
-            </Card>
-          </a>
+      <Bounce right delay={400}>
+        <div
+          className={cn(
+            "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10 ",
+            className
+          )}
+        >
+          {items.map((item, idx) => (
+            <a
+              href={item?.link}
+              target="blank"
+              key={item?.link}
+              className="relative group  block p-2 h-full w-full"
+              onMouseEnter={() => setHoveredIndex(idx)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <AnimatePresence>
+                {hoveredIndex === idx && (
+                  <motion.span
+                    className="absolute inset-0 h-full w-full bg-dark-green  block rounded-3xl z-0"
+                    layoutId="hoverBackground"
+                    initial={{ opacity: 0 }}
+                    animate={{
+                      opacity: 1,
+                      transition: { duration: 0.15 },
+                    }}
+                    exit={{
+                      opacity: 0,
+                      transition: { duration: 0.15, delay: 0.2 },
+                    }}
+                  />
+                )}
+              </AnimatePresence>
+              <Card className>
+                <div className="h-64 z-10">
+                  <img
+                    src={item.image}
+                    alt={item.image}
+                    className="object-cover h-full w-full rounded-xl z-10"
+                  />
+                </div>
+                <CardTitle>{item.title}</CardTitle>
+                <CardDescription>{item.description}</CardDescription>
+              </Card>
+            </a>
+          ))}
+        </div>
       </Bounce>
-        ))}
-      </div>
     </>
   );
 };
