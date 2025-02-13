@@ -16,7 +16,7 @@ export default function RotatingElement() {
             repeat: Infinity,
           }}
         >
-        <img src="/image/earth.png" alt="Earth" className="md:w-[450px] sm:w-[290px] w-[120px]" />
+        <img src="/image/earth.webp" alt="Earth" className="md:w-[450px] sm:w-[290px] w-[120px]" />
       </motion.div>
     </div>
   );
