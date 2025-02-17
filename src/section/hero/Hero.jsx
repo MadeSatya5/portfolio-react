@@ -1,7 +1,7 @@
 import RotatingElement from "./RotatingElement.jsx";
 import { TypewriterEffectSmooth } from "../../components/ui/TypeWriter.jsx";
 import SosmedIcon from "../../components/ui/SosmedIcon.jsx";
-import { Fade, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 
 const words = [
   {
@@ -33,7 +33,7 @@ export default function Hero({heroRef}) {
             <SosmedIcon />
           </Fade>
         </div>
-        <Fade >
+        <Fade right>
           <RotatingElement />
         </Fade>
       </div>
