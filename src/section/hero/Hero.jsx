@@ -33,9 +33,9 @@ export default function Hero({heroRef}) {
             <SosmedIcon />
           </Fade>
         </div>
-        <Fade right>
+        {/* <Fade right> */}
           <RotatingElement />
-        </Fade>
+        {/* </Fade> */}
       </div>
     </div>
   );
